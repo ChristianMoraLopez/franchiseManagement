@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://us-east-1.63a4bee5-d0c1-4ab7-a511-d9de7eb71fd6.aws.yugabyte.cloud:5433/yugabyte?sslmode=verify-full
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: 9Wev6TRsf4JAmYxcG3ZjJzhJKL07Wi
