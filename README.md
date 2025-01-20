@@ -144,6 +144,18 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 La aplicación usa las siguientes variables de entorno que pueden ser configuradas (porque a veces el cambio es bueno):
 
+
+Para que puedas conectarte debes tener en tu Home en linux el archivo Root que se ha subido en el repositorio (Porque puedes entrar y revisar)
+En tu Home puedes crear la carpeta de  .postgresql/ y poner en ella el archivo root luego puedes copiar y pegar el siguiente comando para conectarte a la  Nube!
+
+
+```
+psql "postgresql://admin:9Wev6TRsf4JAmYxcG3ZjJzhJKL07Wi@us-east-1.63a4bee5-d0c1-4ab7-a511-d9de7eb71fd6.aws.yugabyte.cloud:5433/yugabyte?sslmode=verify-full"
+```
+Y listo! 
+
+Usa tus SELECT y lo que quieras para verificar que la info se ha subido de manera correcta. 
+
 ```properties
 SPRING_DATASOURCE_URL=jdbc:postgresql://us-east-1.63a4bee5-d0c1-4ab7-a511-d9de7eb71fd6.aws.yugabyte.cloud:5433/yugabyte?sslmode=verify-full
 SPRING_DATASOURCE_USERNAME=admin
